@@ -1,1 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>Final Maafi ❤️</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+body{
+overflow:auto;
+text-align:center;
+}
+
+.page{
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+padding:30px;
+}
+
+.box{
+max-width:900px;
+width:100%;
+background:rgba(255,255,255,.15);
+backdrop-filter:blur(15px);
+padding:50px;
+border-radius:30px;
+}
+
+.bigHeart{
+font-size:120px;
+animation:pulse 1.5s infinite;
+}
+
+.btn{
+margin-top:30px;
+padding:20px 50px;
+border:none;
+border-radius:50px;
+background:white;
+color:#ff2e63;
+font-size:1.2rem;
+font-weight:700;
+cursor:pointer;
+}
+
+.message{
+display:none;
+margin-top:30px;
+font-size:1.4rem;
+line-height:2;
+}
+
+canvas{
+position:fixed;
+top:0;
+left:0;
+pointer-events:none;
+}
+
+</style>
+</head>
+
+<body>
+
+<div id="hearts"></div>
+
+<canvas id="canvas"></canvas>
+
+<section class="page">
+
+<div class="box">
+
+<div class="bigHeart">❤️</div>
+
+<h1>Meri Jaan</h1>
+
+<p>
+
+Agar tum yahan tak pahunch gayi ho...
+
+To shukriya meri baat sunne ke liye.
+
+Main bas itna kehna chahta hoon...
+
+Mujhe maaf kar do.
+
+Main tumse bahut pyaar karta hoon.
+
+❤️
+
+</p>
+
+<button class="btn" onclick="forgive()">
+❤️ Mujhe Maaf Kar Do ❤️
+</button>
+
+<div class="message" id="message">
+
+Thank You My Love ❤️
+
+<br><br>
+
+Main wada karta hoon ki
+har din tumhe pehle se zyada khush rakhne ki koshish karunga.
+
+<br><br>
+
+Forever Yours ❤️
+
+</div>
+
+</div>
+
+</section>
+
+<script>
+
+function forgive(){
+
+document.getElementById("message").style.display="block";
+
+const canvas=document.getElementById("canvas");
+const ctx=canvas.getContext("2d");
+
+canvas.width=window.innerWidth;
+canvas.height=window.innerHeight;
+
+for(let i=0;i<250;i++){
+
+let x=Math.random()*canvas.width;
+let y=Math.random()*canvas.height;
+
+ctx.beginPath();
+ctx.arc(x,y,4,0,Math.PI*2);
+ctx.fillStyle="white";
+ctx.fill();
+
+}
+
+setTimeout(()=>{
+ctx.clearRect(0,0,canvas.width,canvas.height);
+},3000);
+
+}
+
+</script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
