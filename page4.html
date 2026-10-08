@@ -1,1 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shayari ✨</title>
 
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+body{
+overflow:auto;
+}
+
+.page{
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+padding:40px 20px;
+}
+
+.box{
+width:100%;
+max-width:900px;
+background:rgba(255,255,255,.15);
+backdrop-filter:blur(15px);
+padding:40px;
+border-radius:30px;
+text-align:center;
+}
+
+.box h1{
+font-size:3rem;
+margin-bottom:30px;
+}
+
+.shayari{
+
+background:rgba(255,255,255,.12);
+
+padding:30px;
+
+border-radius:20px;
+
+margin-bottom:25px;
+
+font-size:1.3rem;
+
+line-height:2;
+
+animation:fadeIn 2s;
+}
+
+@keyframes fadeIn{
+from{
+opacity:0;
+transform:translateY(30px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+.next{
+
+display:inline-block;
+
+margin-top:20px;
+
+padding:18px 40px;
+
+background:white;
+
+color:#ff2e63;
+
+text-decoration:none;
+
+font-weight:700;
+
+border-radius:50px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div id="hearts"></div>
+
+<section class="page">
+
+<div class="box">
+
+<h1>✨ Sirf Tumhare Liye</h1>
+
+<div class="shayari">
+
+Galti meri thi,<br>
+Saza mujhe milni chahiye thi,<br>
+Par khamoshi tumhari mili,<br>
+Jo sabse badi saza nikli. ❤️
+
+</div>
+
+<div class="shayari">
+
+Tumse ladna meri aadat nahi,<br>
+Tumhe khona meri aukaat nahi,<br>
+Agar tum door ho jao ek pal ke liye,<br>
+To woh pal meri zindagi nahi. 💖
+
+</div>
+
+<a href="page5.html" class="next">
+Next ❤️
+</a>
+
+</div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
